@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 24 16:52:30 2023
+# Process ID: 17628
+# Current directory: D:/Escritorio/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16880 D:\Escritorio\PWM\PWM.xpr
+# Log file: D:/Escritorio/PWM/vivado.log
+# Journal file: D:/Escritorio/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Escritorio/PWM/PWM.xpr
+launch_simulation
+source main.tcl
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 50 us
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+close_sim

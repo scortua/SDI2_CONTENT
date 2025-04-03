@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 24 13:32:06 2023
+# Process ID: 18000
+# Current directory: D:/Escritorio/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14776 D:\Escritorio\PWM\PWM.xpr
+# Log file: D:/Escritorio/PWM/vivado.log
+# Journal file: D:/Escritorio/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Escritorio/PWM/PWM.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/AppData/Roaming/Xilinx/Vivado/2020.1/xhub/board_store/xilinx_board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Documentos/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1035.039 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 13:35:09 2023...

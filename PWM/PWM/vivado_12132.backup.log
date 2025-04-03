@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 24 14:10:44 2023
+# Process ID: 12132
+# Current directory: D:/Escritorio/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7760 D:\Escritorio\PWM\PWM.xpr
+# Log file: D:/Escritorio/PWM/vivado.log
+# Journal file: D:/Escritorio/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Escritorio/PWM/PWM.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/AppData/Roaming/Xilinx/Vivado/2020.1/xhub/board_store/xilinx_board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Documentos/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1219.387 ; gain = 0.000
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+synth_1_copy_1
+set_property part xc7a100tcsg324-1 [current_project]
+INFO: [Project 1-154] The current project board 'digilentinc.com:nexys4_ddr:part0:1.1' is reset to empty (None). Use 'Project Settings' part selector (GUI) or issue set_property Tcl Command to set the board again.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Wed May 24 14:15:08 2023] Launched impl_1...
+Run output will be captured here: D:/Escritorio/PWM/PWM.runs/impl_1/runme.log
+open_run synth_1 -name synth_1 -pr_config
+ERROR: [Common 17-157] Error parsing command line options, please type 'open_run -help' for usage info.
+open_run -help
+open_run
+
+Description: 
+Open a run into a netlist or implementation design
+
+Syntax: 
+open_run  [-name <arg>] [-pr_config <arg>] [-quiet] [-verbose] <run>
+
+Returns: 
+design object
+
+Usage: 
+  Name          Description
+  -------------------------
+  [-name]       Design name
+  [-pr_config]  PR Configuration to apply while opening the design (only 
+                valid when opening a synthesis run)
+  [-quiet]      Ignore command errors
+  [-verbose]    Suspend message limits during command execution
+  <run>         Run to open into the design
+
+Categories: 
+Project
+
+Description:
+
+  Opens the specified synthesis run into a Netlist Design or implementation
+  run into an Implemented Design. The run properties defining the target part
+  and constraint set are combined with the synthesis or implementation
+  results to create the design view in the tool.
+
+  This command is intended to open a synthesized or implemented design that
+  was created from design runs in Project Mode in the Vivado Design Suite.
+
+  Use the open_checkpoint command to open a Non-Project based checkpoint into
+  memory, opening the design in Non-Project Mode. Refer to the Vivado Design
+  Suite User Guide: Design Flows Overview (UG892) for more information on
+  Project Mode and Non-Project Mode.
+
+Arguments:
+
+  -name - (Optional) This is the name assigned to the synthesized or
+  implemented design when the run is opened by the Vivado tool. This name is
+  for reference purposes, and has nothing to do with the top-level of the
+  design or any logic contained within.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <run> - (Required) Specifies the run name of the synthesis or
+  implementation run to open. The run must have completed synthesis or
+  implementation before it can be opened as a design.
+
+  Note: If you attempt to open a run that has not been launched the tool will
+  return an error.
+
+Examples:
+
+  The following command opens the specified synthesis run into a Netlist
+  Design named synthPass1:
+
+    open_run -name synthPass1 synth_1 
+    
+
+  The following opens an Implemented Design for impl_1:
+
+    open_run impl_1  
+    
+
+See Also:
+
+   *  launch_runs
+   *  link_design
+   *  open_checkpoint
+   *  read_checkpoint
+   *  write_checkpoint
+open_run synth_1 -name synth_1 -pr_config
+ERROR: [Common 17-157] Error parsing command line options, please type 'open_run -help' for usage info.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'memoria_porc/magnitudes'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1366.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc]
+WARNING: [Vivado 12-584] No ports matched 'port_id_sal'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w_e'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'port_id_sal'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w_e'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAMB16BWER' instantiated as 'mem_prog/ram_1k_generate.s6.kcpsm6_rom' [D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd:253]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1439.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 2 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1545.430 ; gain = 326.043
+synth_1
+-pr_config
+invalid command name "-pr_config"
+setup_pr_configurations -v -use_netlist -force
+ERROR: [Common 17-69] Command failed: Enable PR_FLOW property on project to execute PR Flow TCL Commands
+open_run synth_1 -name synth_1 -pr_config
+ERROR: [Common 17-157] Error parsing command line options, please type 'open_run -help' for usage info.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc]
+WARNING: [Vivado 12-584] No ports matched 'port_id_sal'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w_e'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'port_id_sal'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w_e'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAMB16BWER' instantiated as 'mem_prog/ram_1k_generate.s6.kcpsm6_rom' [D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd:253]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2007.879 ; gain = 2.195
+synth_1
+open_run synth_1 -pr_config synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+PR Configuration synth_1 doesn't exist in project, Design is opening with default configuration
+INFO: [Project 1-454] Reading design checkpoint 'd:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'memoria_porc/magnitudes'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2073.781 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc]
+WARNING: [Vivado 12-584] No ports matched 'port_id_sal'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w_e'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'port_id_sal'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w_e'. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Escritorio/PWM/PWM.srcs/constrs_1/new/ports.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAMB16BWER' instantiated as 'mem_prog/ram_1k_generate.s6.kcpsm6_rom' [D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd:253]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2125.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 2 instances
+
+design_1
+setup_pr_configurations -v -use_netlist -force
+ERROR: [Common 17-69] Command failed: Enable PR_FLOW property on project to execute PR Flow TCL Commands
+setup_pr_configurations -v -use_netlist
+ERROR: [Common 17-69] Command failed: Enable PR_FLOW property on project to execute PR Flow TCL Commands
+setup_pr_configurations
+ERROR: [Common 17-69] Command failed: Enable PR_FLOW property on project to execute PR Flow TCL Commands
+open_run setup_pr_configurations -v
+ERROR: [Common 17-162] Invalid option value specified for 'run'.
+setup_pr_configurations -v
+ERROR: [Common 17-69] Command failed: Enable PR_FLOW property on project to execute PR Flow TCL Commands
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 14:28:22 2023...

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  13667107213030456372  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 95f3e76847ad4c8ca6a13a294eac84d3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot pwm_behav xil_defaultlib.pwm" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "20:09:33" , 
+    linkCmd : "D:\\Documentos\\Xilinx\\Vivado\\2020.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/pwm_behav/xsimk.exe\"   \"xsim.dir/pwm_behav/obj/xsim_0.win64.obj\" \"xsim.dir/pwm_behav/obj/xsim_1.win64.obj\" -L\"D:\\Documentos\\Xilinx\\Vivado\\2020.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

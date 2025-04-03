@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb 22 19:05:46 2023
+# Process ID: 23972
+# Current directory: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16936 C:\Users\Scort\OneDrive\Documentos\santiago cortes tovar\trabajos\quinto semestre\SDI-2\registro_universal\reg_universal\reg_universal.xpr
+# Log file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/vivado.log
+# Journal file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/reg_universal.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source reg_uni.tcl
+add_force {/reg_uni/selector} -radix hex {00 0ns}
+add_force {/reg_uni/DSR} -radix hex {1 0ns}
+add_force {/reg_uni/DSL} -radix hex {1 0ns}
+add_force {/reg_uni/reg_in} -radix hex {3 0ns}
+run 10 us
+close_sim
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {reg_in[3]} {reg_in[2]} {reg_in[1]} {reg_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {reg_in[3]} {reg_in[2]} {reg_in[1]} {reg_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {reg_out[3]} {reg_out[2]} {reg_out[1]} {reg_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {selector[1]} {selector[0]}]]
+place_ports {reg_in[0]} T8
+place_ports {reg_in[0]} U9
+place_ports {reg_in[1]} U8
+place_ports {reg_in[2]} R7
+place_ports {reg_in[3]} R6
+place_ports {reg_out[0]} T8
+place_ports {reg_out[1]} V9
+place_ports {reg_out[2]} R8
+place_ports {reg_out[3]} T6
+place_ports {selector[0]} P3
+place_ports {selector[1]} P4
+place_ports DSR R5
+place_ports DSL V7
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list DSL]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list DSR]]
+place_ports clock E3
+file mkdir {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/reg_universal.srcs/constrs_1/new}
+close [ open {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/reg_universal.srcs/constrs_1/new/reg_uni.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/reg_universal.srcs/constrs_1/new/reg_uni.xdc}}
+set_property target_constrs_file {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/reg_universal.srcs/constrs_1/new/reg_uni.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+open_run synth_1 -name synth_1

@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Mar 12 14:24:43 2023
+# Process ID: 22196
+# Current directory: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent255924 C:\Users\Scort\OneDrive\Documentos\santiago cortes tovar\trabajos\quinto semestre\SDI-2\RAM_\MEMORY_RAM\MEMORY_RAM.xpr
+# Log file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM/vivado.log
+# Journal file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM/MEMORY_RAM.xpr}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {data_in[7]} {data_in[6]} {data_in[5]} {data_in[4]} {data_in[3]} {data_in[2]} {data_in[1]} {data_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {data_out[7]} {data_out[6]} {data_out[5]} {data_out[4]} {data_out[3]} {data_out[2]} {data_out[1]} {data_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in_address[4]} {in_address[3]} {in_address[2]} {in_address[1]} {in_address[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_out_enable]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_write_enable]]
+place_ports clk E3
+place_ports {data_in[0]} J15
+place_ports {data_in[1]} L16
+place_ports {data_in[2]} M13
+place_ports {data_in[3]} R15
+place_ports {data_in[4]} R17
+place_ports {data_in[5]} T10
+startgroup
+set_property package_pin "" [get_ports [list  {data_out[0]}]]
+place_ports {data_in[6]} U18
+endgroup
+place_ports {data_in[7]} R13
+place_ports {data_out[0]} H17
+place_ports {data_out[1]} K15
+place_ports {data_out[2]} J13
+place_ports {data_out[3]} N14
+place_ports {data_out[4]} R10
+startgroup
+set_property package_pin "" [get_ports [list  in_out_enable]]
+place_ports {data_out[5]} V17
+endgroup
+place_ports {data_out[6]} U17
+startgroup
+set_property package_pin "" [get_ports [list  in_write_enable]]
+place_ports {data_out[7]} U16
+endgroup
+place_ports {in_address[0]} U8
+place_ports {in_address[1]} R16
+place_ports {in_address[2]} T13
+place_ports {in_address[3]} H6
+place_ports {in_address[4]} U12
+place_ports in_out_enable V10
+place_ports in_write_enable U11
+place_ports {data_in[5]} T18
+place_ports {data_out[4]} R18
+file mkdir {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM/MEMORY_RAM.srcs/constrs_1/new}
+close [ open {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM/MEMORY_RAM.srcs/constrs_1/new/MEMO_RAM.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM/MEMORY_RAM.srcs/constrs_1/new/MEMO_RAM.xdc}}
+set_property target_constrs_file {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/RAM_/MEMORY_RAM/MEMORY_RAM.srcs/constrs_1/new/MEMO_RAM.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+synth_design -rtl -name rtl_1

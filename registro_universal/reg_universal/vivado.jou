@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Mar  2 19:22:59 2023
+# Process ID: 22116
+# Current directory: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13380 C:\Users\Scort\OneDrive\Documentos\santiago cortes tovar\trabajos\quinto semestre\SDI-2\registro_universal\reg_universal\reg_universal.xpr
+# Log file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/vivado.log
+# Journal file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/registro_universal/reg_universal/reg_universal.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {reg_in[5]} {reg_in[4]} {reg_in[3]} {reg_in[2]} {reg_in[1]} {reg_in[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[3]}]]
+place_ports {reg_in[4]} R15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[2]}]]
+place_ports {reg_in[3]} M13
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[1]}]]
+place_ports {reg_in[2]} L16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[0]}]]
+place_ports {reg_in[1]} J15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[1]}]]
+place_ports {reg_in[0]} J15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[2]}]]
+place_ports {reg_in[1]} L16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[3]}]]
+place_ports {reg_in[2]} M13
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {reg_in[4]}]]
+place_ports {reg_in[3]} R15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {selector[0]}]]
+place_ports {reg_in[4]} R17
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {selector[1]}]]
+place_ports {reg_in[5]} T18
+endgroup
+place_ports {selector[1]} V10
+place_ports {selector[0]} U11
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+launch_simulation
+source reg_uni.tcl
+add_force {/reg_uni/clk} -radix hex {1 0ns}
+add_force {/reg_uni/reloj} -radix hex {1 0ns}
+add_force {/reg_uni/load} -radix hex {1 0ns}
+add_force {/reg_uni/reg_in[5]} -radix hex {1 0ns}
+add_force {/reg_uni/reg_in[0]} -radix hex {1 0ns}
+add_force {/reg_uni/reg_in[2]} -radix hex {1 0ns}
+add_force {/reg_uni/reg_in[3]} -radix hex {1 0ns}
+run 10 us
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+close_design
+close_sim

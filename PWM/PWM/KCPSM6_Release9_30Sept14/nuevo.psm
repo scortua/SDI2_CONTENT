@@ -1,0 +1,38 @@
+ORG 0x0000
+START:
+    ; Configurar el contador de periodo
+    ; Aquí se establece el periodo deseado del PWM
+    MOVI R0, 100    ; Valor del contador de periodo (ajustar según sea necesario)
+    OUT R0, PWM_PERIOD
+    
+    ; Configurar el contador de ciclo de trabajo
+    ; Aquí se establece el ciclo de trabajo inicial del PWM
+    MOVI R1, 50     ; Valor del contador de ciclo de trabajo (ajustar según sea necesario)
+    OUT R1, PWM_DUTY_CYCLE
+    
+LOOP:
+    ; Incrementar el ciclo de trabajo
+    ADDI R1, R1, 1  ; Incrementar el contador de ciclo de trabajo
+    OUT R1, PWM_DUTY_CYCLE
+    
+    ; Esperar un tiempo (puedes ajustar esto según la velocidad deseada)
+    WAIT
+    
+    ; Verificar si el ciclo de trabajo alcanzó el máximo y resetearlo
+    CMPI R1, 100   ; Compara el contador de ciclo de trabajo con el valor máximo
+    BNE LOOP       ; Si no es igual, continúa en el bucle
+    MOVI R1, 0     ; Si es igual, resetea el contador de ciclo de trabajo
+    OUT R1, PWM_DUTY_CYCLE
+    JMP LOOP       ; Vuelve al inicio del bucle
+    
+; Direcciones de memoria
+PWM_PERIOD        EQU 0x00
+PWM_DUTY_CYCLE    EQU 0x01
+
+; Subrutina de espera (ajusta el valor de retardo según sea necesario)
+WAIT:
+    MOVI R2, 1000  ; Valor de retardo (ajustar según sea necesario)
+WAIT_LOOP:
+    SUBI R2, R2, 1 ; Decrementar el contador de retardo
+    BNZ WAIT_LOOP  ; Si no es cero, continuar en el bucle
+    RET            ; Retornar de la subrutina

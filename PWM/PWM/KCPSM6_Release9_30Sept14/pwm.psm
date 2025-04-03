@@ -1,0 +1,53 @@
+;PWM codigo del programa
+CONSTANT PWM	, 01 		;El puerto del PWN es el 00
+CONSTANT DISPLAY	, 02 		;El puerto de la logica para los displays es el 01
+CONSTANT ADDRESS	, 04 		;El puesto donde van a ir las direcciones de las memorias es 04
+NAMEREG  s0		, REG_MAG	;Registro para la magnitud del pulso
+NAMEREG  s1 	, REG_POR	;Registro de porcentaje del pulso
+NAMEREG  s3		, REG_NRE	;Registro de numeros representados
+NAMEREG  s4		, REG_INS	;Registro de instrucciones
+NAMEREG  s5		, REG_CPO	;Registro de contador de pulso añadido
+
+	ADDRESS 000
+
+begin_n    : 	
+		DISABLE INTERRUPT
+		LOAD 		REG_NRE,00
+		OUTPUT 	REG_NRE,ADDRESS
+		INPUT		REG_POR,00
+		INPUT		REG_MAG,01
+start_n    :OUTPUTK	01,PWM
+		OUTPUT	REG_MAG,DISPLAY
+		LOAD		REG_CPO,00
+add_1	   :	ADD		REG_CPO,01
+		LOAD		REG_INS,05
+delay_1  :	ADD 		REG_INS,05
+		LOAD		REG_CPO,REG_CPO
+		LOAD		REG_CPO,REG_CPO
+		COMPARE	REG_INS,C3
+		JUMP 		NZ,delay_1
+		LOAD		REG_CPO,REG_CPO
+		COMPARE	REG_POR,REG_CPO
+		JUMP 		NZ,add_1
+		OUTPUTK	00,PWM
+		LOAD		REG_CPO,REG_CPO
+		LOAD		REG_CPO,REG_CPO
+add_2	   :	ADD		REG_CPO,01
+		LOAD		REG_INS,05
+delay_2  :	ADD 		REG_INS,05
+		LOAD		REG_CPO,REG_CPO
+		LOAD		REG_CPO,REG_CPO
+		COMPARE	REG_INS,C3
+		JUMP 		NZ,delay_2
+		LOAD		REG_CPO,REG_CPO
+		COMPARE	REG_CPO,5F
+		JUMP 		NZ,add_2
+		ADD		REG_NRE,01
+		OUTPUT	REG_NRE,ADDRESS
+		LOAD		REG_CPO,REG_CPO
+		COMPARE	REG_NRE,28
+		INPUT		REG_MAG,01
+		INPUT		REG_POR,00	
+		JUMP 		NZ,start_n
+		JUMP		begin_n
+		RETURN

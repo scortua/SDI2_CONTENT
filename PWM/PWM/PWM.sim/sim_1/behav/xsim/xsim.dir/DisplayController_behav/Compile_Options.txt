@@ -1,0 +1,1 @@
+-wto "95f3e76847ad4c8ca6a13a294eac84d3" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "DisplayController_behav" "xil_defaultlib.DisplayController" -log "elaborate.log" 

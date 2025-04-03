@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 25 06:48:16 2023
+# Process ID: 9884
+# Current directory: D:/Escritorio/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17768 D:\Escritorio\PWM\PWM.xpr
+# Log file: D:/Escritorio/PWM/vivado.log
+# Journal file: D:/Escritorio/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Escritorio/PWM/PWM.xpr
+export_ip_user_files -of_objects  [get_files D:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset dist_mem_gen_1 D:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci
+synth_design -rtl -name rtl_1
+open_project C:/Users/Juan/proyectos_vivado/2023/ram/ram.xpr
+update_compile_order -fileset sources_1
+current_project PWM
+close [ open D:/Escritorio/PWM/PWM.srcs/sources_1/new/display.vhd w ]
+add_files D:/Escritorio/PWM/PWM.srcs/sources_1/new/display.vhd
+current_project ram
+current_project PWM
+open_project C:/Users/Juan/proyectos_vivado/2022/visualizacion_dinamica/visualizacion_dinamica.xpr
+update_compile_order -fileset sources_1
+current_project PWM
+refresh_design
+current_project ram
+close_project
+close_project
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {anodos_display[3]} {anodos_display[2]} {anodos_display[1]} {anodos_display[0]}]]
+place_ports {anodos_display[3]} J14
+place_ports {anodos_display[2]} T9
+place_ports {anodos_display[1]} J18
+place_ports {anodos_display[0]} J17
+place_ports {leds_display[6]} L18
+place_ports {leds_display[5]} T11
+place_ports {leds_display[4]} P15
+place_ports {leds_display[3]} K13
+place_ports {leds_display[2]} K16
+place_ports {leds_display[1]} R10
+place_ports {leds_display[0]} T10
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {leds_display[6]} {leds_display[5]} {leds_display[4]} {leds_display[3]} {leds_display[2]} {leds_display[1]} {leds_display[0]}]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+launch_simulation
+source main.tcl
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+run 1 s
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 1 s
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+refresh_design
+launch_simulation
+source main.tcl
+close_sim
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+launch_simulation
+source main.tcl
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 1 s
+close_sim
+launch_simulation
+source main.tcl
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 1 s
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 1 s
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns}
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 1 s
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 1 s
+export_ip_user_files -of_objects  [get_files D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd] -no_script -reset -force -quiet
+remove_files  D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+add_files -norecurse D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close_design
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {otros_anods[3]} {otros_anods[2]} {otros_anods[1]} {otros_anods[0]}]]
+place_ports {otros_anods[3]} U1
+place_ports {otros_anods[3]} U13
+place_ports {otros_anods[2]} K2
+place_ports {otros_anods[1]} T14
+place_ports {otros_anods[0]} P14
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close_design
+export_ip_user_files -of_objects  [get_files D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd] -no_script -reset -force -quiet
+remove_files  D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+add_files -norecurse D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+export_ip_user_files -of_objects  [get_files D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd] -no_script -reset -force -quiet
+remove_files  D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+add_files -norecurse D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+export_ip_user_files -of_objects  [get_files D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd] -no_script -reset -force -quiet
+remove_files  D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+add_files -norecurse D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Escritorio/PWM/PWM.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1
+close_sim

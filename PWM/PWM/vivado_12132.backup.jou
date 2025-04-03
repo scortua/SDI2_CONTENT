@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 24 14:10:44 2023
+# Process ID: 12132
+# Current directory: D:/Escritorio/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7760 D:\Escritorio\PWM\PWM.xpr
+# Log file: D:/Escritorio/PWM/vivado.log
+# Journal file: D:/Escritorio/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Escritorio/PWM/PWM.xpr
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7a100tcsg324-1 [current_project]
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1 -pr_config
+open_run -help
+open_run synth_1 -name synth_1 -pr_config
+open_run synth_1 -name synth_1
+-pr_config
+setup_pr_configurations -v -use_netlist -force
+open_run synth_1 -name synth_1 -pr_config
+open_run synth_1 -name synth_1
+open_run synth_1 -pr_config synth_1
+setup_pr_configurations -v -use_netlist -force
+setup_pr_configurations -v -use_netlist
+setup_pr_configurations
+open_run setup_pr_configurations -v
+setup_pr_configurations -v

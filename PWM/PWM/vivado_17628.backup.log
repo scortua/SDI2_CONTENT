@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 24 16:52:30 2023
+# Process ID: 17628
+# Current directory: D:/Escritorio/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16880 D:\Escritorio\PWM\PWM.xpr
+# Log file: D:/Escritorio/PWM/vivado.log
+# Journal file: D:/Escritorio/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Escritorio/PWM/PWM.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/AppData/Roaming/Xilinx/Vivado/2020.1/xhub/board_store/xilinx_board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Documentos/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1217.125 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Documentos/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/porcentajes.coe'
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/mem_prog.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_0_dist_mem_gen_v8_0_13'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_1_rom'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_1_dist_mem_gen_v8_0_13_synth'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_1_dist_mem_gen_v8_0_13'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/new/PAQUETE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/new/ff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'flipflop'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/kcpsm6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'kcpsm6'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/new/mem_porc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mem_porc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/PWM.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm'
+INFO: [VRFC 10-3107] analyzing entity 'jtag_loader_6'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+"xelab -wto 95f3e76847ad4c8ca6a13a294eac84d3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot main_behav xil_defaultlib.main -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Documentos/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 95f3e76847ad4c8ca6a13a294eac84d3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot main_behav xil_defaultlib.main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.paquete
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.jtag_loader_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.divifreg [divifreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.memoriaDatos [memoriadatos_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_13 [dist_mem_gen_0_dist_mem_gen_v8_0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0 [dist_mem_gen_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_porc [mem_porc_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111110000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000001010100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000010101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111101111001000...]
+Compiling architecture ram64m_v of entity unisim.RAM64M [ram64m_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011010010110100101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111111111111111...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fd_v of entity unisim.FD [fd_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000001000001100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000001000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110011000011001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01011010001111001111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011101110111011100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111111111111100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000111100101000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011101110000100000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110100000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110000001100110000...]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="100000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="010000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101100101011001111...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111010...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="001100110011001110...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="101000101000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011111111110000...]
+Compiling architecture ram32m_v of entity unisim.RAM32M [ram32m_default]
+Compiling architecture low_level_definition of entity xil_defaultlib.kcpsm6 [kcpsm6_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16bwer_v of entity unisim.RAMB16BWER [\RAMB16BWER(data_width_a=18,data...]
+Compiling architecture low_level_definition of entity xil_defaultlib.pwm [\pwm(1,2)\]
+Compiling architecture behavioral of entity xil_defaultlib.flipflop [flipflop_default]
+Compiling architecture behavioral of entity xil_defaultlib.main
+Built simulation snapshot main_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/xsim.dir/main_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/xsim.dir/main_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed May 24 16:55:48 2023. For additional details about this file, please refer to the WebTalk help file at D:/Documentos/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed May 24 16:55:48 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1217.125 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 1217.125 ; gain = 0.000
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 50 us
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1217.125 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Documentos/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/porcentajes.coe'
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim/mem_prog.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj main_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Escritorio/PWM/PWM.sim/sim_1/behav/xsim'
+"xelab -wto 95f3e76847ad4c8ca6a13a294eac84d3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot main_behav xil_defaultlib.main -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Documentos/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 95f3e76847ad4c8ca6a13a294eac84d3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot main_behav xil_defaultlib.main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1217.125 ; gain = 0.000
+add_force {/main/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+add_force {/main/cpu_reset} -radix hex {0 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+add_force {/main/cpu_reset} -radix hex {1 0ns}
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 17:02:43 2023...

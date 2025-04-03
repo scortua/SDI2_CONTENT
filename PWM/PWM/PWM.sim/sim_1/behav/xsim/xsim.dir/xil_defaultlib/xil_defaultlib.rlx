@@ -1,0 +1,17 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/kcpsm6.vhd,1684426282,vhdl,,,,kcpsm6,,,,,,,,
+D:/Escritorio/PWM/KCPSM6_Release9_30Sept14/pwm.vhd,1684953694,vhdl,,,,jtag_loader_6;jtag_loader_pkg;pwm,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl,1684644087,vhdl,,,,dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_13,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_sim_netlist.vhdl,1684942738,vhdl,,,,dist_mem_gen_1;dist_mem_gen_1_dist_mem_gen_v8_0_13;dist_mem_gen_1_dist_mem_gen_v8_0_13_synth;dist_mem_gen_1_rom,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/Divisor40kHz.vhd,1684540824,vhdl,,,,divifreg,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/MEMORIA_DE_DATOS.vhd,1684426290,vhdl,,,,memoriadatos,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/PAQUETE.vhd,1685020219,vhdl,D:/Escritorio/PWM/PWM.srcs/sources_1/new/main.vhd,,,paquete,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/display.vhd,1685020162,vhdl,,,,vis_din_4dig,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/ff.vhd,1684639678,vhdl,,,,flipflop,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/main.vhd,1685024020,vhdl,,,,main,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/mem_porc.vhd,1684943542,vhdl,,,,mem_porc,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/mux.vhd,1684637637,vhdl,,,,mux,,,,,,,,
+D:/Escritorio/PWM/PWM.srcs/sources_1/new/visualizador_dinamico.vhd,1684878539,vhdl,,,,displaycontroller,,,,,,,,

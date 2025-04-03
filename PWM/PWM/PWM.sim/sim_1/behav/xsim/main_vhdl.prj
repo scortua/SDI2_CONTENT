@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PWM.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl" \
+"../../../../PWM.srcs/sources_1/new/Divisor40kHz.vhd" \
+"../../../../PWM.srcs/sources_1/new/MEMORIA_DE_DATOS.vhd" \
+"../../../../PWM.srcs/sources_1/new/PAQUETE.vhd" \
+"../../../../PWM.srcs/sources_1/new/ff.vhd" \
+"../../../../KCPSM6_Release9_30Sept14/kcpsm6.vhd" \
+"../../../../PWM.srcs/sources_1/new/mem_porc.vhd" \
+"../../../../PWM.srcs/sources_1/new/mux.vhd" \
+"../../../../PWM.srcs/sources_1/new/main.vhd" \
+"../../../../KCPSM6_Release9_30Sept14/pwm.vhd" \
+"../../../../PWM.srcs/sources_1/new/display.vhd" \
+
+# Do not sort compile order
+nosort

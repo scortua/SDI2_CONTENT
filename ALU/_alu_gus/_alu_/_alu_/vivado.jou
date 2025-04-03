@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 11 13:56:40 2023
+# Process ID: 304
+# Current directory: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent439400 C:\Users\Scort\OneDrive\Documentos\santiago cortes tovar\trabajos\quinto semestre\SDI-2\ALU\_alu_gus\_alu_\_alu_\_alu_.xpr
+# Log file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_/vivado.log
+# Journal file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_/_alu_.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7a35ticpg236-1L [current_project]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag

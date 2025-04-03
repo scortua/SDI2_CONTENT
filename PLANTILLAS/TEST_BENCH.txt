@@ -1,0 +1,48 @@
+--Librerias
+library ieee;
+use ieee.std_logic_1164.all;
+
+--Definici n de la entidad testbench
+entity miCircuito_tb is     --Cambiar nombre de la entidad
+    --generic();            --Opcional
+end entity;
+
+--Arquitectura testbench
+architecture testbench of miCircuito_tb is
+--Declaraci n UUT (unit under test)
+component miCircuito is     --Cambiar miCircuito por el nombre del circuito a probar
+    port();                 --Definir los puertos igual que la entidad del circuito a probar
+end component;
+
+--Se ales: las mismas de los puertos del componente de la UUT
+--signal clock: std_logic;  --Ejemplo se al clock
+
+--Constantes de reloj
+--constant clockPeriodo:time := 1us; --Periodo de tiempo opcional
+
+begin
+--instancia de la UUT
+UUT:    miCircuito      --Cambiar miCircuito por el nombre de la entidad a probar
+        port map (  clock =>, --Conectar cada uno de los puertos de la entidad a probar a
+                    );        --las se ales definidas en el testbench
+--proceso para manejo del reloj (opcional)
+--reloj: process
+--begin
+--    clock <= '0';
+--    wait for clockPeriodo/2;
+--    clock <= '1';
+--    wait for clockPeriodo/2;
+--end process;
+
+--Proceso para el manejo de todos los estimulos
+estimulos: process
+begin
+    wait for 100ms; --Tiempo de estabilizaci n
+    --wait for clockPeriodo*10; --Espera basada en el periodo de tiempo
+    
+    --Escriba ac  los Estimulos
+    
+end process;
+
+
+end architecture;

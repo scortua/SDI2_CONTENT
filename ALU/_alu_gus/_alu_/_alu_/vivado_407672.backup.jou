@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 11 13:09:26 2023
+# Process ID: 407672
+# Current directory: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent440512 C:\Users\Scort\OneDrive\Documentos\santiago cortes tovar\trabajos\quinto semestre\SDI-2\ALU\_alu_gus\_alu_\_alu_\_alu_.xpr
+# Log file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_/vivado.log
+# Journal file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/ALU/_alu_gus/_alu_/_alu_/_alu_.xpr}
+update_compile_order -fileset sources_1

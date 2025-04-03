@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 19 15:31:03 2023
+# Process ID: 13864
+# Current directory: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/vin_din/vin_din.runs/impl_1
+# Command line: vivado.exe -log visualizador.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source visualizador.tcl -notrace
+# Log file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/vin_din/vin_din.runs/impl_1/visualizador.vdi
+# Journal file: C:/Users/Scort/OneDrive/Documentos/santiago cortes tovar/trabajos/quinto semestre/SDI-2/vin_din/vin_din.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source visualizador.tcl -notrace

@@ -1,0 +1,81 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Mar 22 21:53:45 2023
+| Host         : santi-pc-tuf running 64-bit major release  (build 9200)
+| Command      : report_methodology -file IPRAM_methodology_drc_routed.rpt -pb IPRAM_methodology_drc_routed.pb -rpx IPRAM_methodology_drc_routed.rpx
+| Design       : IPRAM
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 9
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 8          |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_0_0/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_1_1/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_2_2/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_3_3/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_4_4/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_5_5/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_6_6/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_31_7_7/SP/CLK is not reached by a timing clock
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, ram/clk
+Related violations: <none>
+
+
